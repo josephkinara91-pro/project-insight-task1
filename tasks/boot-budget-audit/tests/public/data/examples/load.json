@@ -1,0 +1,436 @@
+{
+  "creator": "boot-budget mapped-cell fixture",
+  "modules": {
+    "top": {
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [
+            72
+          ]
+        },
+        "control": {
+          "direction": "input",
+          "bits": [
+            217,
+            133,
+            151
+          ]
+        },
+        "qualify": {
+          "direction": "input",
+          "bits": [
+            164
+          ]
+        },
+        "observe": {
+          "direction": "output",
+          "bits": [
+            220
+          ]
+        }
+      },
+      "cells": {
+        "i_1e3664b95f1a0f2e": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              139
+            ],
+            "A": [
+              36
+            ],
+            "B": [
+              29
+            ]
+          }
+        },
+        "i_72990d1f0968b3fb": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              72
+            ],
+            "D": [
+              82
+            ],
+            "Q": [
+              187
+            ]
+          }
+        },
+        "i_16ec262395663499": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              36
+            ],
+            "A": [
+              217
+            ]
+          }
+        },
+        "i_3f5e5c2c3bdfe7a0": {
+          "hide_name": 0,
+          "type": "AND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              24
+            ],
+            "A": [
+              140
+            ],
+            "B": [
+              46
+            ]
+          }
+        },
+        "i_9be5e5e1e0969863": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              72
+            ],
+            "D": [
+              124
+            ],
+            "Q": [
+              46
+            ]
+          }
+        },
+        "i_abdace10704ca585": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              140
+            ],
+            "A": [
+              217
+            ]
+          }
+        },
+        "i_95a22d2fe65c770a": {
+          "hide_name": 0,
+          "type": "AOI21",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              75
+            ],
+            "A": [
+              217
+            ],
+            "B": [
+              "1"
+            ],
+            "C": [
+              118
+            ]
+          }
+        },
+        "i_a186c6d656bb52aa": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              136
+            ],
+            "A": [
+              85
+            ]
+          }
+        },
+        "i_51056bbaafe04f8c": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              212
+            ],
+            "A": [
+              217
+            ],
+            "B": [
+              "1"
+            ]
+          }
+        },
+        "i_2643e54e19402fe2": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              167
+            ],
+            "A": [
+              107
+            ],
+            "B": [
+              220
+            ]
+          }
+        },
+        "i_f7b428444ebe9bb0": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              72
+            ],
+            "D": [
+              143
+            ],
+            "Q": [
+              85
+            ]
+          }
+        },
+        "i_1d067cd7ccdc06ea": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              143
+            ],
+            "A": [
+              173
+            ]
+          }
+        },
+        "i_5297c20606999165": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              72
+            ],
+            "D": [
+              189
+            ],
+            "Q": [
+              220
+            ]
+          }
+        },
+        "i_c7a339dfae62b3a9": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              65
+            ],
+            "A": [
+              139
+            ],
+            "B": [
+              95
+            ]
+          }
+        },
+        "i_2b3f888141b17246": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              29
+            ],
+            "A": [
+              187
+            ]
+          }
+        },
+        "i_eec98eba45545256": {
+          "hide_name": 0,
+          "type": "OR2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              124
+            ],
+            "A": [
+              24
+            ],
+            "B": [
+              32
+            ]
+          }
+        },
+        "i_fed390e97804a6e3": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              107
+            ],
+            "A": [
+              217
+            ]
+          }
+        },
+        "i_73060fe1a7a73084": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              189
+            ],
+            "A": [
+              167
+            ],
+            "B": [
+              212
+            ]
+          }
+        },
+        "i_baf432b0bc71c3f7": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              173
+            ],
+            "A": [
+              75
+            ]
+          }
+        },
+        "i_42e1bfc5383e3f02": {
+          "hide_name": 0,
+          "type": "AND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              32
+            ],
+            "A": [
+              217
+            ],
+            "B": [
+              "0"
+            ]
+          }
+        },
+        "i_224c41fde8d0b767": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              95
+            ],
+            "A": [
+              217
+            ],
+            "B": [
+              "0"
+            ]
+          }
+        },
+        "i_c794f15cb6124127": {
+          "hide_name": 0,
+          "type": "AND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              118
+            ],
+            "A": [
+              109
+            ],
+            "B": [
+              136
+            ]
+          }
+        },
+        "i_e111f024b34e786c": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              109
+            ],
+            "A": [
+              217
+            ]
+          }
+        },
+        "i_3cb6d0a2e46ceb7b": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              82
+            ],
+            "A": [
+              65
+            ]
+          }
+        },
+        "i_c8abd4f4fc1d7c4c": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              183
+            ],
+            "A": [
+              133
+            ]
+          }
+        }
+      },
+      "netnames": {}
+    }
+  }
+}

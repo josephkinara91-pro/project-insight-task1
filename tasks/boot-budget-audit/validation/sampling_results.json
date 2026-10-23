@@ -1,0 +1,51 @@
+[
+  {
+    "case": "shared-stall",
+    "reported_length": 14,
+    "expected_length": 21,
+    "verdict": "rejected: Sequence length is not the exact minimum",
+    "seconds": 2.822
+  },
+  {
+    "case": "filter-deadband",
+    "reported_length": 12,
+    "expected_length": 15,
+    "verdict": "rejected: Sequence length is not the exact minimum",
+    "seconds": 3.041
+  },
+  {
+    "case": "rare-status",
+    "reported_length": 5,
+    "expected_length": 5,
+    "verdict": "accepted",
+    "seconds": 0.656
+  },
+  {
+    "case": "configuration-order",
+    "reported_length": 3,
+    "expected_length": 3,
+    "verdict": "accepted",
+    "seconds": 0.698
+  },
+  {
+    "case": "three-way-pointer",
+    "reported_length": 1,
+    "expected_length": 4,
+    "verdict": "rejected: Sequence length is not the exact minimum",
+    "seconds": 0.34
+  },
+  {
+    "case": "coupled-pointers",
+    "reported_length": 4,
+    "expected_length": 6,
+    "verdict": "rejected: Sequence length is not the exact minimum",
+    "seconds": 0.501
+  },
+  {
+    "case": "interlocked-boot",
+    "reported_length": 10,
+    "expected_length": 13,
+    "verdict": "rejected: Sequence length is not the exact minimum",
+    "seconds": 1.545
+  }
+]

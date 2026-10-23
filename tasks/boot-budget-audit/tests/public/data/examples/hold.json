@@ -1,0 +1,252 @@
+{
+  "creator": "boot-budget mapped-cell fixture",
+  "modules": {
+    "top": {
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [
+            92
+          ]
+        },
+        "control": {
+          "direction": "input",
+          "bits": [
+            42,
+            103
+          ]
+        },
+        "qualify": {
+          "direction": "input",
+          "bits": [
+            134,
+            72
+          ]
+        },
+        "observe": {
+          "direction": "output",
+          "bits": [
+            145
+          ]
+        }
+      },
+      "cells": {
+        "i_4a268e6ab9f54dd2": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              22
+            ],
+            "A": [
+              21
+            ]
+          }
+        },
+        "i_43e7cd60a2998538": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              143
+            ],
+            "A": [
+              94
+            ]
+          }
+        },
+        "i_4fe4d36c8b35e4c2": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              60
+            ],
+            "A": [
+              22
+            ]
+          }
+        },
+        "i_aba47a0879982950": {
+          "hide_name": 0,
+          "type": "AND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              142
+            ],
+            "A": [
+              140
+            ],
+            "B": [
+              94
+            ]
+          }
+        },
+        "i_cd2fedb627621a47": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              94
+            ],
+            "A": [
+              124
+            ]
+          }
+        },
+        "i_2138208fdbe9cd3a": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              77
+            ],
+            "A": [
+              134
+            ]
+          }
+        },
+        "i_55ca65109c78f4de": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              92
+            ],
+            "D": [
+              20
+            ],
+            "Q": [
+              21
+            ]
+          }
+        },
+        "i_b44efb7fcfa8d5cd": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              140
+            ],
+            "A": [
+              145
+            ]
+          }
+        },
+        "i_98a2be6a0781fe9d": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              104
+            ],
+            "A": [
+              72
+            ]
+          }
+        },
+        "i_ee1fbde3a80e9791": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              92
+            ],
+            "D": [
+              56
+            ],
+            "Q": [
+              145
+            ]
+          }
+        },
+        "i_eee171aef84b203d": {
+          "hide_name": 0,
+          "type": "OR2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              56
+            ],
+            "A": [
+              142
+            ],
+            "B": [
+              44
+            ]
+          }
+        },
+        "i_21491782b93e981b": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              92
+            ],
+            "D": [
+              60
+            ],
+            "Q": [
+              124
+            ]
+          }
+        },
+        "i_1b8c9e73793f4e68": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              20
+            ],
+            "A": [
+              145
+            ]
+          }
+        },
+        "i_62f382ad9f39aac2": {
+          "hide_name": 0,
+          "type": "AND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              44
+            ],
+            "A": [
+              145
+            ],
+            "B": [
+              143
+            ]
+          }
+        }
+      },
+      "netnames": {}
+    }
+  }
+}
