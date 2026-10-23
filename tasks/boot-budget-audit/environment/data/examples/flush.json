@@ -1,0 +1,307 @@
+{
+  "creator": "boot-budget mapped-cell fixture",
+  "modules": {
+    "top": {
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [
+            74
+          ]
+        },
+        "control": {
+          "direction": "input",
+          "bits": [
+            38,
+            143,
+            101,
+            167
+          ]
+        },
+        "observe": {
+          "direction": "output",
+          "bits": [
+            95
+          ]
+        }
+      },
+      "cells": {
+        "i_1d01db5c7d6c065d": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              20
+            ],
+            "A": [
+              53
+            ],
+            "B": [
+              52
+            ]
+          }
+        },
+        "i_d517522d28979373": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              74
+            ],
+            "D": [
+              146
+            ],
+            "Q": [
+              68
+            ]
+          }
+        },
+        "i_fea44e8001b7e850": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              59
+            ],
+            "A": [
+              167
+            ]
+          }
+        },
+        "i_949fdda1c3005403": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              86
+            ],
+            "A": [
+              101
+            ]
+          }
+        },
+        "i_d97659fe72923668": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              119
+            ],
+            "A": [
+              20
+            ],
+            "B": [
+              135
+            ]
+          }
+        },
+        "i_28368520684dc031": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              146
+            ],
+            "A": [
+              141
+            ]
+          }
+        },
+        "i_d5ed55874ff46ae4": {
+          "hide_name": 0,
+          "type": "AND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              62
+            ],
+            "A": [
+              86
+            ],
+            "B": [
+              95
+            ]
+          }
+        },
+        "i_8b2813475d0fe449": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              53
+            ],
+            "A": [
+              101
+            ]
+          }
+        },
+        "i_85b4d16ccd3002f3": {
+          "hide_name": 0,
+          "type": "AOI21",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              17
+            ],
+            "A": [
+              101
+            ],
+            "B": [
+              "0"
+            ],
+            "C": [
+              62
+            ]
+          }
+        },
+        "i_617159a3cadbc18a": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              80
+            ],
+            "A": [
+              38
+            ]
+          }
+        },
+        "i_8a111097da6501cb": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              85
+            ],
+            "A": [
+              17
+            ]
+          }
+        },
+        "i_0bbc00aee38430e2": {
+          "hide_name": 0,
+          "type": "AOI21",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              141
+            ],
+            "A": [
+              101
+            ],
+            "B": [
+              52
+            ],
+            "C": [
+              71
+            ]
+          }
+        },
+        "i_bedcda81c6f6ad1b": {
+          "hide_name": 0,
+          "type": "NAND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              135
+            ],
+            "A": [
+              101
+            ],
+            "B": [
+              95
+            ]
+          }
+        },
+        "i_b2032ee76a8198fa": {
+          "hide_name": 0,
+          "type": "AND2",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              71
+            ],
+            "A": [
+              161
+            ],
+            "B": [
+              68
+            ]
+          }
+        },
+        "i_b3fecc785f74483a": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              74
+            ],
+            "D": [
+              119
+            ],
+            "Q": [
+              52
+            ]
+          }
+        },
+        "i_697c3546ec9a9fe8": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              161
+            ],
+            "A": [
+              101
+            ]
+          }
+        },
+        "i_7a1b214228702569": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "C": [
+              74
+            ],
+            "D": [
+              85
+            ],
+            "Q": [
+              95
+            ]
+          }
+        }
+      },
+      "netnames": {}
+    }
+  }
+}

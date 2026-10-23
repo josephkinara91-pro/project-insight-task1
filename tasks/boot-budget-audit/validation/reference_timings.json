@@ -1,0 +1,122 @@
+[
+  {
+    "case": "combinational",
+    "length": 0,
+    "seconds": 0.068
+  },
+  {
+    "case": "pipeline",
+    "length": 6,
+    "seconds": 1.126
+  },
+  {
+    "case": "short-budget",
+    "length": null,
+    "seconds": 0.251
+  },
+  {
+    "case": "shared-stall",
+    "length": 21,
+    "seconds": 9.539
+  },
+  {
+    "case": "stall-budget",
+    "length": null,
+    "seconds": 2.091
+  },
+  {
+    "case": "filter-deadband",
+    "length": 15,
+    "seconds": 9.056
+  },
+  {
+    "case": "qualified-control",
+    "length": 10,
+    "seconds": 2.547
+  },
+  {
+    "case": "reset-priority",
+    "length": 4,
+    "seconds": 1.164
+  },
+  {
+    "case": "rare-status",
+    "length": 5,
+    "seconds": 1.168
+  },
+  {
+    "case": "configuration-order",
+    "length": 3,
+    "seconds": 1.598
+  },
+  {
+    "case": "unseeded-state",
+    "length": null,
+    "seconds": 2.987
+  },
+  {
+    "case": "seed-and-drain",
+    "length": 6,
+    "seconds": 2.035
+  },
+  {
+    "case": "recirculating-state",
+    "length": null,
+    "seconds": 1.178
+  },
+  {
+    "case": "three-way-pointer",
+    "length": 4,
+    "seconds": 0.893
+  },
+  {
+    "case": "coupled-pointers",
+    "length": 6,
+    "seconds": 1.372
+  },
+  {
+    "case": "flag-and-filter",
+    "length": 16,
+    "seconds": 10.502
+  },
+  {
+    "case": "zero-budget",
+    "length": null,
+    "seconds": 0.069
+  },
+  {
+    "case": "interlocked-boot",
+    "length": 13,
+    "seconds": 4.947
+  },
+  {
+    "case": "shared-stall-variant",
+    "length": 21,
+    "seconds": 9.921
+  },
+  {
+    "case": "reset-priority-variant",
+    "length": 4,
+    "seconds": 0.998
+  },
+  {
+    "case": "rare-status-variant",
+    "length": 5,
+    "seconds": 1.121
+  },
+  {
+    "case": "configuration-order-variant",
+    "length": 3,
+    "seconds": 1.255
+  },
+  {
+    "case": "three-way-pointer-variant",
+    "length": 4,
+    "seconds": 0.78
+  },
+  {
+    "case": "coupled-pointers-variant",
+    "length": 6,
+    "seconds": 1.15
+  }
+]

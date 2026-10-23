@@ -1,0 +1,30 @@
+artifacts = ["/app/boot_sequence.py"]
+schema_version = "2.0"
+
+[task]
+name = "insight/boot-budget-audit"
+description = "Synthesize a shortest open-loop initialization sequence within a firmware cycle budget for a partially reset gate-level circuit."
+
+[metadata]
+category = "Hardware"
+subcategory = "RTL"
+tags = ["formal-verification", "reset", "gate-level", "sequential-logic", "initialization"]
+difficulty_explanation = "An RTL formal-verification engineer must determine whether one fixed firmware sequence brings every internal register to an initial-state-independent value. Inputs are synthetic gate-level versions of partially reset control and datapath blocks. The difficult distinction is a common open-loop sequence for all initial states versus a different sequence for each state. Correlation through reconvergent logic, rare sticky-status conditions, enable/reset priority, and controls shared by blocks defeat sampled simulation, X propagation, and independently optimizing blocks. The task asks a bounded boot-ROM sign-off question, not unbounded synchronizing-word existence."
+solution_explanation = "The reference constructs a symbolic transition system from the public netlist. At a candidate length it searches for a common input sequence on a finite set of initial-state witnesses, then asks a separate symbolic miter for a power-up state that disagrees with the zero-state execution. A counterexample refines the sequence search; an unsatisfiable candidate problem proves no sequence exists at that length. Synchronization is preserved by appending any common input, allowing a monotone search for the minimum within the stated budget. No netlist name, private fixture, or expected length is used by the solver."
+verification_explanation = "Private block-level models derive exact minima by breadth-first reachability of sets of possible states, using exact finite quotients for wide load-only register banks. These models do not use the reference solver or its SMT encoding. Each submitted sequence is checked against those models, and library/generator consistency is tested independently. Cases cover budget insufficiency, persistent state, rare conditions, coupled enables, saturation, and ordering. Equivalent hidden netlists vary net identifiers, cell order, input mapping, and flop storage polarity. Candidate code runs unprivileged in a subprocess with the private tests and reward directory inaccessible; pytest and reward generation stay outside that subprocess. Acceptance is binary and requires every case to pass."
+expert_time_estimate_hours = 8
+relevant_experience = "Task design requires formal analysis of partially reset RTL, symbolic transition systems, and independent verification of bounded initialization sequences. The implementation is AI-assisted and must be reviewed by the submitting domain expert; no employment history or human-only authorship is claimed."
+
+[verifier]
+timeout_sec = 6000.0
+environment_mode = "separate"
+
+[agent]
+timeout_sec = 28800.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0

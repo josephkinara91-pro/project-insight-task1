@@ -1,0 +1,17 @@
+Our ASIC boot-ROM team needs to decide whether partially reset blocks can be brought to a reproducible internal state within their initialization budgets. Implement `/app/boot_sequence.py`, invoked as:
+
+```
+python3 /app/boot_sequence.py NETLIST_JSON MAX_CYCLES OUTPUT_JSON
+```
+
+The tool must exit zero and write `OUTPUT_JSON` with exactly `length` and `sequence`. Find the shortest sequence of primary-input vectors, of length at most `MAX_CYCLES`, that leaves **every flip-flop** at the same final value for **every possible initial flip-flop assignment**. Each flip-flop initially contains an independent arbitrary binary value, including resettable flops; a reset happens only when applied by the sequence. The sequence is fixed in advance and cannot observe internal state. Different final flops may have different values. Primary outputs alone do not determine success.
+
+`length` is that minimum nonnegative integer. `sequence` is a list of `length` objects, each mapping every non-clock input port to an unsigned integer fitting its width. Any sequence attaining the minimum is accepted. If no sequence within the supplied budget exists, return `{"length": null, "sequence": []}`. This says nothing about longer sequences. Zero cycles are allowed, including for a design without state. Do not treat a search timeout as evidence of impossibility.
+
+Inputs are flat Yosys-style JSON netlists with one module named `top`. `/app/data/cells.v` gives the complete cell semantics. `/app/netlist.py` supplies the loader and a binary single-cycle simulator; it is also available unchanged during grading. Files under `/app/data/examples/` illustrate the interface and include small checked answers. You may use or replace the loader within your submitted program, but edits to the supplied loader and data are not exported.
+
+The JSON has `ports`, `cells`, and optional `netnames`. Port bit lists are least-significant bit first; net identifiers are integers and the only constant bits are the strings `"0"` and `"1"`. Cells have scalar named `connections` and a `type` from the supplied library. Cell and net names and JSON dictionary order carry no semantic information. All registers share the rising edge of the scalar input `clk`, which is used only at clock pins and excluded from sequence vectors. Combinational logic is acyclic and may reconverge; every nonconstant net has exactly one driver. There are no latches, asynchronous resets, inouts, memories, black boxes, or other cell types. Inputs are stable for each edge; all flops capture simultaneously from the values before that edge.
+
+The grading inputs have 0–96 flops, at most 6,000 combinational cells, at most six non-clock input bits, and budgets from 0 to 32 inclusive. The tool is run on unseen netlists, including equivalent renamings and input-polarity changes. Each invocation has up to 180 seconds, two CPUs, 4 GiB of address space, 32 processes, and 128 open files. Any file it writes may be at most 1 GiB; output JSON may be at most 1 MiB. The Python standard library and the image's installed packages are available in the grading environment. Submit a self-contained Python file at `/app/boot_sequence.py`; that is the only artifact copied to the separate verifier. No network or package installation is needed while your program is being graded.
+
+You have 28800 seconds to complete this task. Do not cheat by using online solutions or hints specific to this task.

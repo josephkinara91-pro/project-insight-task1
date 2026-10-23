@@ -1,0 +1,75 @@
+{
+  "creator": "boot-budget mapped-cell fixture",
+  "modules": {
+    "top": {
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [
+            55
+          ]
+        },
+        "control": {
+          "direction": "input",
+          "bits": [
+            32,
+            63,
+            46,
+            69
+          ]
+        },
+        "observe": {
+          "direction": "output",
+          "bits": [
+            33
+          ]
+        }
+      },
+      "cells": {
+        "i_de698e382bdeba86": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              39
+            ],
+            "A": [
+              69
+            ]
+          }
+        },
+        "i_774bf3062767df63": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              29
+            ],
+            "A": [
+              46
+            ]
+          }
+        },
+        "i_4ad976c007c6dea9": {
+          "hide_name": 0,
+          "type": "NOT",
+          "parameters": {},
+          "attributes": {},
+          "connections": {
+            "Y": [
+              33
+            ],
+            "A": [
+              32
+            ]
+          }
+        }
+      },
+      "netnames": {}
+    }
+  }
+}
